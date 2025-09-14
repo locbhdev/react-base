@@ -5,7 +5,7 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseAnonKey) {
 	throw new Error(
-		"Missing Supabase environment variables. Please check your .env file.",
+		"Missing Supabase environment variables. Please check your .env file."
 	);
 }
 
@@ -17,4 +17,5 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 	},
 });
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Database = any; // Replace with your generated database types
