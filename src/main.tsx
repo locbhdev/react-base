@@ -23,6 +23,7 @@ const router = createRouter({
 	routeTree,
 	context: {
 		queryClient,
+		store,
 	},
 });
 
